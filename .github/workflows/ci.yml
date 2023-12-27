@@ -15,7 +15,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          echo ::set-output name=tags::blackb1rd/python-postgres-docker:latest,blackb1rd/python-postgres-docker:${GITHUB_REF/refs\/tags\//},ghcr.io/${{ github.repository_owner }}/python-postgres-docker:latest,ghcr.io/${{ github.repository_owner }}/python-postgres-docker:${GITHUB_REF/refs\/tags\//}
+          echo ::set-output name=tags::python-postgres-docker:latest,python-postgres-docker:${GITHUB_REF/refs\/tags\//},ghcr.io/${{ github.repository_owner }}/python-postgres-docker:latest,ghcr.io/${{ github.repository_owner }}/python-postgres-docker:${GITHUB_REF/refs\/tags\//}
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up QEMU
